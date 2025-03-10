@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #8360c3, #2ebf91);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        th {
+            background: #007bff;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .feature-title {
+            font-weight: bold;
+            background: #f8f8f8;
+            color: #333;
+        }
+
+        /* Highlight Standard Plan */
+        .highlight {
+            background: #efebff;
+            border-left: 1px solid #6a0dad;
+            border-right: 1px solid #6a0dad;
+            font-weight: bold;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .highlight-bottom {
+            border-bottom: 1px solid #6a0dad;
+        }
+
+        .highlight th {
+            background: #6a0dad;
+            color: white;
+        }
+
+        .head {
+            border-top: 1px solid #6a0dad;
+            color: #1c940e;
+        }
+
+        .highlight .price {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        .highlight .btn {
+            background: #6a0dad;
+            color: rgb(255, 255, 255);
+        }
+
+        .highlight .btn:hover {
+            background: #4a087b;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+
+            th,
+            td {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .btn {
+                font-size: 12px;
+                padding: 8px 12px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Basic</th>
+                    <th class="highlight head">Standard</th>
+                    <th>Premium</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="feature-title">Price</td>
+                    <td>$19/month</td>
+                    <td class="highlight price">$39/month</td>
+                    <td>$79/month</td>
+                </tr>
+                <tr>
+                    <td class="feature-title">Users</td>
+                    <td>5 Users</td>
+                    <td class="highlight">10 Users</td>
+                    <td>Unlimited Users</td>
+                </tr>
+                <tr>
+                    <td class="feature-title">Storage</td>
+                    <td>10GB</td>
+                    <td class="highlight">50GB</td>
+                    <td>200GB</td>
+                </tr>
+                <tr>
+                    <td class="feature-title">Support</td>
+                    <td>Email Support</td>
+                    <td class="highlight">Priority Support</td>
+                    <td>24/7 Support</td>
+                </tr>
+                <tr>
+                    <td class="feature-title">Analytics</td>
+                    <td>Basic Analytics</td>
+                    <td class="highlight">Advanced Analytics</td>
+                    <td>Premium Analytics</td>
+                </tr>
+                <tr>
+                    <td class="feature-title">Action</td>
+                    <td><button class="btn">Get Started</button></td>
+                    <td class="highlight highlight-bottom"><button class="btn">Get Started</button></td>
+                    <td><button class="btn">Get Started</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
